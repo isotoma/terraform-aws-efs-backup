@@ -78,3 +78,9 @@ variable "tags" {
   default     = {}
   description = "Additional tags (e.g. `map('BusinessUnit`,`XYZ`)"
 }
+
+variable "datapipeline_security_group" {
+  type        = "string"
+  default     = ""
+  description = "Optionally specify a security group to use for the datapipeline instances"
+}
